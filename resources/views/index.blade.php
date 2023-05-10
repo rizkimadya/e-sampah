@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Milky - Dairy Website Template</title>
+    <title>Transgar</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,40 +45,27 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">Milky</h1>
+        <a href="#beranda" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">Transgar</h1>
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#beranda" class="nav-item nav-link active">Beranda</a>
+                <a href="#about" class="nav-item nav-link">Tentang</a>
+                <a href="#" class="nav-item nav-link">Kontak</a>
             </div>
-            <div class="border-start ps-4 d-none d-lg-block">
-                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
-            </div>
+            <a href="" class="btn btn-primary me-3">Daftar</a>
+            <a href="" class="btn btn-outline-primary">Login</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
+    <div class="container-fluid px-0 mb-5" id="beranda">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -87,48 +74,50 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
-                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">The Farm of Dairy
-                                        products</h1>
+                                    <p class="fs-4 text-white">Selamat Datang</p>
+                                    <h3 class="display-3 text-white mb-5 animated slideInRight">Di Website Pengangkut
+                                        Sampah</h3>
                                     <a href=""
-                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('assets/img/carousel-2.jpg') }}" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-8 text-end">
-                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy
-                                        Products</h1>
-                                    <a href=""
-                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
-                                        More</a>
+                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Daftar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
         </div>
     </div>
     <!-- Carousel End -->
+
+    <!-- About Start -->
+    <section id="about">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="col-lg-6">
+                        <img class="img-fluid mb-4"
+                            src="https://img.freepik.com/free-vector/set-garbage-truck-janitor-illustration_1308-2734.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="section-title bg-white text-start text-primary pe-3">Tentang Penyangkut Sampah</p>
+                        <h1 class="mb-4">Ketahui Tentang Transgar
+                        </h1>
+                        <p class="mb-4">Pengangkutan sampah adalah bagian persampahan yang bersasaran
+                            membawa sampah dari lokasi pemindahan atau dari sumber sampah secara langsung
+                            menuju tempat pemerosesan akhir (TPA). Dengan optimasi sub-sistem ini diharapkan
+                            pengangkutan sampah menjadi mudah, cepat, penugasan terhadap supir jelas serta
+                            biaya relatif murah. Minimnya jumlah sarana yang digunakan serta jarak dan waktu
+                            tempuh merupakan tujuan utama dari perencanaan rute transportasi sampah.Akses
+                            yang mudah ke TPA akan mempercepat pengangkutan sampah dari Tempat
+                            Penampungan Sementara (TPS). </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
 
 
     <!-- Footer Start -->
